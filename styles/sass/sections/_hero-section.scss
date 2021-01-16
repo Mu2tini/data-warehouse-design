@@ -1,0 +1,32 @@
+.hero-section {
+    display: flex;
+    grid-column: 1/13;
+    grid-row: 3/8;
+    position: relative;
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero-info__title {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    max-width: 645px;
+    font-size: 80px;
+}
+
+.hero-info__description {
+    font-family: 'MetropolisMedium';
+    line-height: 1.6;
+    max-width: 380px;
+    font-size: 18px;
+}
+
+.hero-section__image {
+    position: absolute;
+    right: -120px;
+    top: 96px;
+}

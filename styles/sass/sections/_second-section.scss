@@ -1,0 +1,29 @@
+.second-section {
+    background-color: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 62px;
+    grid-column: 1/13;
+    grid-row: 9/14;
+}
+
+.info-section {
+    max-width: 475px;
+    display: grid;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info-section__title {
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.info-section__description {
+    font-family: 'MetropolisMedium';
+    line-height: 1.6;
+    font-size: 18px;
+}

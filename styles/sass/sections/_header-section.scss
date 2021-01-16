@@ -1,0 +1,44 @@
+.header-section {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1/13;
+    grid-row: 1/2;
+    align-items: flex-end;
+}
+
+.site-nav {
+    width: 322px;
+    height: 30px;
+}
+
+.site-nav__menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    li {
+        display: inline;
+        a {
+            text-decoration: none;
+            font-family: 'MetropolisMedium';
+            font-size: 16px;
+        }
+        /* unvisited link */
+        a:link {
+            color: $grey;
+        }
+        /* visited link */
+        a:visited {
+            color: $grey;
+        }
+        /* mouse over link */
+        a:hover {
+            color: $dark-blue;
+            font-family: 'MetropolisBold'
+        }
+        /* selected link */
+        a:active {
+            color: $dark-blue;
+            font-family: 'MetropolisBold'
+        }
+    }
+}

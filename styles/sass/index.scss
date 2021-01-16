@@ -1,0 +1,29 @@
+@import 'variables';
+@import 'typography';
+@import 'fonts';
+@import './blocks/button';
+@import './sections/header-section';
+@import './sections/hero-section';
+@import './sections/second-section';
+@import './sections/features-section';
+@import './sections/header-section';
+@import './sections/testimonals-section';
+@import './sections/try-for-free-section';
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.site-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(45, 100px);
+    gap: 10px;
+}

@@ -1,0 +1,69 @@
+.features-section {
+    grid-column: 1/13;
+    grid-row: 15/25;
+}
+
+.features-section__description {
+    width: 60%;
+}
+
+.cards-grid {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.features-section__title {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #212353;
+    text-align: center;
+}
+
+.features-section__description {
+    font-family: 'MetropolisExtraLight';
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.cards-grid__title {
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.cards-grid__description {
+    font-family: 'MetropolisRegular';
+    font-size: 14;
+}
+
+.cards-grid__link {
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.cards-grid__item {
+    padding: 10px;
+    width: 220px;
+}
+
+.cards-grid__container {
+    width: 420px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    background-position: right;
+    background-image: url('./images/Rectangle1.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cards-grid__img {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+}
