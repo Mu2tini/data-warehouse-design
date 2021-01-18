@@ -1,6 +1,5 @@
 .features-section {
-    grid-column: 1/13;
-    grid-row: 15/25;
+    grid-area: features;
 }
 
 .features-section__description {
@@ -10,8 +9,9 @@
 .cards-grid {
     display: grid;
     grid-row-gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 'card1 card2' 'card3 card4';
 }
 
 .features-section__title {
@@ -57,7 +57,7 @@
     position: relative;
     justify-content: flex-end;
     background-position: right;
-    background-image: url('./images/Rectangle1.svg');
+    background-image: url('../../assets/images/Rectangle1.svg');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -66,4 +66,16 @@
     position: absolute;
     left: 30px;
     bottom: 70px;
+}
+
+@media screen and (max-width: 900px) {
+    .cards-grid {
+        display: grid;
+        grid-row-gap: 50px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 'card1' 'card2' 'card3' 'card4';
+    }
+    .cards-grid__container {
+        margin: 0 auto;
+    }
 }

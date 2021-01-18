@@ -1,8 +1,8 @@
 .hero-section {
     display: flex;
-    grid-column: 1/13;
-    grid-row: 3/8;
+    flex: wrap;
     position: relative;
+    grid-area: hero;
 }
 
 .hero-info {
@@ -25,8 +25,26 @@
     font-size: 18px;
 }
 
-.hero-section__image {
-    position: absolute;
-    right: -120px;
-    top: 96px;
+@media screen and (max-width: 1200px) {
+    .hero-section__image {
+        width: 100%;
+        max-width: 885px;
+    }
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        flex: wrap;
+        position: relative;
+        grid-area: hero;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero-section__image {
+        position: absolute;
+        right: -120px;
+        top: 96px;
+        width: 100%;
+        max-width: 885px;
+    }
 }

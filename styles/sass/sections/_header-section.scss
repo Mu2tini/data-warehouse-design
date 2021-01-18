@@ -1,13 +1,14 @@
 .header-section {
     display: flex;
     justify-content: space-between;
-    grid-column: 1/13;
-    grid-row: 1/2;
     align-items: flex-end;
+    flex-wrap: wrap;
+    grid-area: header;
+    margin-top: 50px;
 }
 
 .site-nav {
-    width: 322px;
+    width: 300px;
     height: 30px;
 }
 
@@ -40,5 +41,17 @@
             color: $dark-blue;
             font-family: 'MetropolisBold'
         }
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .header-section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        gap: 20px;
+        flex-wrap: wrap;
+        grid-area: header;
+        margin-top: 50px;
     }
 }

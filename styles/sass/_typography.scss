@@ -1,3 +1,4 @@
+@import 'fonts';
 @import 'variables';
 .bg-color-white {
     background-color: $white;
@@ -5,6 +6,10 @@
 
 .bg-color-purple {
     background-color: $purple;
+}
+
+.bg-color-pink {
+    background-color: $pink;
 }
 
 .bg-color-dark-blue {
@@ -33,4 +38,36 @@
 
 .text-color-grey {
     color: $grey;
+}
+
+.title {
+    font-family: Helvetica, sans-serif;
+}
+
+.title--small {
+    font-size: 20px;
+}
+
+.title--normal {
+    font-size: 40px;
+}
+
+.title--large {
+    font-size: 80px;
+}
+
+.text {
+    font-family: 'MetropolisMedium';
+}
+
+.text--small {
+    font-size: 16px;
+}
+
+.text--extra-small {
+    font-size: 12px;
+}
+
+.text--normal {
+    font-size: 18px;
 }

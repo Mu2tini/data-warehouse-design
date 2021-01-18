@@ -6,9 +6,10 @@
 @import './sections/hero-section';
 @import './sections/second-section';
 @import './sections/features-section';
-@import './sections/header-section';
 @import './sections/testimonals-section';
 @import './sections/try-for-free-section';
+@import './sections/footer-section';
+@import './blocks/menu';
 * {
     padding: 0px;
     margin: 0px;
@@ -22,8 +23,16 @@ body {
 .site-container {
     max-width: 1120px;
     margin: 0 auto;
+    padding: 10px;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(45, 100px);
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: min-content(100px, auto);
+    gap: 150px;
+    grid-template-areas: 'header header header header' 'hero hero hero hero' 'second second second second' 'features features features features' 'testimonals testimonals testimonals testimonals' 'try-for-free try-for-free try-for-free try-for-free' 'footer footer footer footer';
+}
+
+@media screen and (max-width: 930px) {
+    .site-container {
+        gap: 75px;
+    }
 }

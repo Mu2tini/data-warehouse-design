@@ -1,0 +1,17 @@
+.try-for-free-section {
+    display: flex;
+    justify-content: space-between;
+    grid-area: try-for-free;
+}
+
+.try-for-free-section__info {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    min-width: 400px;
+}
+
+.try-for-free-section__links {
+    display: flex;
+    gap: 30px;
+}
