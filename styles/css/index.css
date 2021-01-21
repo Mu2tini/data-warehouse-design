@@ -486,10 +486,6 @@
 
 @media screen and (max-width: 930px) {
   .link__title {
-    display: block;
-    font-size: 16px;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
     text-align: center;
   }
 
@@ -599,11 +595,6 @@
 }
 
 * {
-  padding: 0px;
-  margin: 0px;
-}
-
-body {
   padding: 0px;
   margin: 0px;
 }
