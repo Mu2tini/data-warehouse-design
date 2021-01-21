@@ -1,0 +1,46 @@
+@import '../variables';
+@import '../fonts';
+.links-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    li {
+        a {
+            text-decoration: none;
+            font-family: 'MetropolisMedium';
+            font-size: 16px;
+        }
+        /* unvisited link */
+        a:link {
+            color: $grey;
+        }
+        /* visited link */
+        a:visited {
+            color: $grey;
+        }
+        /* mouse over link */
+        a:hover {
+            color: $dark-blue;
+            font-family: 'MetropolisBold'
+        }
+        /* selected link */
+        a:active {
+            color: $dark-blue;
+            font-family: 'MetropolisBold'
+        }
+    }
+}
+
+.links-menu--vertical {
+    display: block;
+    li {
+        line-height: 2.5;
+    }
+}
+
+.links-menu--social {
+    i.fab {
+        font-size: 50px;
+        margin-right: 10px;
+    }
+}

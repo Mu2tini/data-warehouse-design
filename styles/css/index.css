@@ -183,7 +183,7 @@
 }
 .hero-section {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   position: relative;
   grid-area: hero;
 }
@@ -484,68 +484,6 @@
   font-weight: bold;
 }
 
-.link {
-  list-style-type: none;
-}
-.link li {
-  line-height: 2.5;
-  /* unvisited link */
-  /* visited link */
-  /* mouse over link */
-  /* selected link */
-}
-.link li a {
-  text-decoration: none;
-  font-family: "MetropolisMedium";
-  font-size: 14px;
-}
-.link li a:link {
-  color: #212353;
-}
-.link li a:visited {
-  color: #212353;
-}
-.link li a:hover {
-  color: #4B5D68;
-  font-family: "MetropolisBold";
-}
-.link li a:active {
-  color: #4B5D68;
-  font-family: "MetropolisBold";
-}
-
-.link--horizontal {
-  display: inline;
-}
-
-.link--vertical {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-  font-family: "MetropolisMedium";
-}
-
-.social-link i.fab {
-  font-size: 50px;
-  margin-right: 10px;
-}
-.social-link:link {
-  color: #212353;
-}
-.social-link:visited {
-  color: #212353;
-}
-.social-link:hover {
-  color: #4B5D68;
-  font-family: "MetropolisBold";
-}
-.social-link:active {
-  color: #4B5D68;
-  font-family: "MetropolisBold";
-}
-
 @media screen and (max-width: 930px) {
   .link__title {
     display: block;
@@ -601,107 +539,63 @@ a {
     gap: 20px;
   }
 }
-.m-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 100;
-  pointer-events: none;
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: "MetropolisRegular";
+  src: url("../fonts/Metropolis/Metropolis-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "MetropolisMedium";
+  src: url("../fonts/Metropolis/Metropolis-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "MetropolisExtraLight";
+  src: url("../fonts/Metropolis/Metropolis-ExtraLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "MetropolisBold";
+  src: url("../fonts/Metropolis/Metropolis-Bold.otf") format("opentype");
+}
+.links-menu {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+.links-menu li {
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
+}
+.links-menu li a {
+  text-decoration: none;
+  font-family: "MetropolisMedium";
+  font-size: 16px;
+}
+.links-menu li a:link {
+  color: #4B5D68;
+}
+.links-menu li a:visited {
+  color: #4B5D68;
+}
+.links-menu li a:hover {
+  color: #212353;
+  font-family: "MetropolisBold";
+}
+.links-menu li a:active {
+  color: #212353;
+  font-family: "MetropolisBold";
 }
 
-.m-menu__backdrop {
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
-  opacity: 0;
-  transition: opacity 500ms ease-out;
-  pointer-events: none;
-}
-
-.m-menu__burger {
-  z-index: 2;
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  top: 1.1rem;
-  left: 1.1rem;
-  padding: 0.6rem 0.4rem;
-}
-
-.m-menu__burger span,
-.m-menu__burger span::before,
-.m-menu__burger span::after {
-  content: "";
+.links-menu--vertical {
   display: block;
-  width: 3.2rem;
-  height: 0.4rem;
-  position: absolute;
-  margin-top: 1.2rem;
-  background: white;
-  border-radius: 0.3rem;
+}
+.links-menu--vertical li {
+  line-height: 2.5;
 }
 
-.m-menu__burger span::before {
-  margin-top: -0.8rem;
-}
-
-.m-menu__burger span::after {
-  margin-top: 0.8rem;
-}
-
-.m-menu__toggle {
-  z-index: 3;
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  top: 1.1rem;
-  left: 1.1rem;
-  cursor: pointer;
-  opacity: 0;
-  outline: 1px solid black;
-  pointer-events: all;
-}
-
-.m-menu__content {
-  z-index: 4;
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: auto;
-  width: 30rem;
-  height: 100vh;
-  margin: 0;
-  padding: 0 0 2rem 0;
-  background: #e6e6e6;
-  transform-origin: 0 0;
-  transform: translateX(-31.5rem);
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  pointer-events: all;
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.75);
-}
-
-.m-menu__toggle:checked {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-}
-
-.m-menu__toggle:checked ~ .m-menu__content {
-  transform: none;
-}
-
-.m-menu__toggle:checked ~ .m-menu__backdrop {
-  opacity: 1;
+.links-menu--social i.fab {
+  font-size: 50px;
+  margin-right: 10px;
 }
 
 * {
